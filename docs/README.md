@@ -94,4 +94,14 @@ Example:
 x = perimeter(15)
 x = 60
 ```
+# Changelog
+`added docs for triangle.py dcbac0878aea38b1ad829aa6d1ece0f706cb78ab`
+
+`added docs for square.py 8329ab302e570e89c7dd462d531738b5fd7ed95c`
+
+`added docs for circle.py 823e18e0f74cc15bc16aaad1d3cae32e48d096e6`
+
+`added docs for calculate.py 8993ee4ccf8ed5d478e5a74d1edb752df07471d8`
+
+`updated read.me c94ff95ba25e68e58bda89588f921f6919e61a91`
 
