@@ -103,5 +103,7 @@ x = 60
 
 `added docs for calculate.py 8993ee4ccf8ed5d478e5a74d1edb752df07471d8`
 
-`updated read.me c94ff95ba25e68e58bda89588f921f6919e61a91`
+`updated README.md c94ff95ba25e68e58bda89588f921f6919e61a91`
+
+`added changelog for README.md df1d1fa479aa8360ae705d25e2c9452c3b91a6cf`
 
