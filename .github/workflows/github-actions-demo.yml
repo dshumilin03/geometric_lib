@@ -1,5 +1,5 @@
-name: GitHub Actions Demo3
-run-name: ${{ github.actor }} is testing out GitHub Actions3 🚀
+name: GitHub Actions Demo4
+run-name: ${{ github.actor }} is testing out GitHub Actions4 🚀
 on: [push]
 jobs:
   test:
@@ -41,5 +41,5 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest --disable-warnings -q
+          python3 -m pytest tests/
 
