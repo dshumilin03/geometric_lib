@@ -1,7 +1,16 @@
-name: Geometric_lib_action_testing
+name: GeometricLib Action Testing
 run-name: ${{ github.actor }} tests Geometric_lib
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - release
+  pull_request:
+    branches:
+      - main
+      - release
+      - develop
 
 jobs:
   Test_Geometric_lib:
