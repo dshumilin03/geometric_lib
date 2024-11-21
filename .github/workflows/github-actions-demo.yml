@@ -1,6 +1,15 @@
-name: GitHub Actions Demo4
-run-name: ${{ github.actor }} is testing out GitHub Actions4 🚀
-on: [push]
+name: GitHub Actions Demo5
+run-name: ${{ github.actor }} is testing out GitHub Actions5 🚀
+on:
+  push:
+    branches:
+      - main
+      - release
+  pull_request:
+    branches:
+      - master
+      - release
+      - develop
 jobs:
   test:
     runs-on: ubuntu-latest
