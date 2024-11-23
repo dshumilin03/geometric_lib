@@ -2,29 +2,23 @@ import pytest
 
 import calculate
 
+test_data = [
+    ("circle", "area", [5]),
+    ("circle", "perimeter", [5]),
+    ("square", "area", [4]),
+    ("square", "perimeter", [4])
+]
 
-def test_calc_successor():
+
+@pytest.mark.parametrize("fig, func, size", test_data)
+def test_calc_successor(fig, func, size):
     # given
-    funcs = calculate.funcs
-    figs = calculate.figs
-    sizes = {
-        "area-circle": [5],
-        "perimeter-circle": [5],
-        "area-square": [4],
-        "perimeter-square": [4]
-    }
-    results = []
 
     # when
-    for fig in figs:
-        for func in funcs:
-            size_key = f"{func}-{fig}"
-            size = sizes[size_key]
-            results.append(calculate.calc(fig, func, size))
+    result = calculate.calc(fig, func, size)
 
     # then
-    for result in results:
-        assert isinstance(result, (int, float))
+    assert isinstance(result, (int, float))
 
 
 def test_calc_invalid_figure():
